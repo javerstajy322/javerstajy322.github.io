@@ -73,7 +73,7 @@ a {
 }
 
 .button {
-	display: block;
+	display: inline-block;
 	width: 240px;
 	padding: 13px 0;
 
@@ -144,12 +144,46 @@ header {
 	text-transform: uppercase;
 }
 
+.site-nav-list li,
+.backet-nav li {
+	padding-bottom: 13px;
+	border-bottom: 2px solid #fb565a;
+}
+
+.site-nav-list a:hover,
+.backet-nav a:hover {
+	color: #fb565a;
+}
+
+.site-nav-list a:active,
+.backet-nav a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
 .backet-nav {
 	display: flex;
 	justify-content: flex-end;
 	width: 160px;
 	margin-left: 240px;
 }
+
+.backet-nav li {
+	display: flex;
+	justify-content: flex-end;
+	width: 112px;
+}
+
+.backet-nav li::before {
+	content: "";
+	position: absolute;
+	background-image: url(../img/cart-icon.svg);
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 15px; 
+	margin: 4px 0px 0px -97px;
+}
+
 
 /*slider*/
 
@@ -369,6 +403,10 @@ header {
 }
 
 .about-left-list li {
+	display: relative;
+}
+
+.about-left-list li {
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -387,11 +425,9 @@ header {
 	content: "";
     position: absolute;
     width: 25px;
-    left: ;
-    right: ;
-    top: ;
-    bottom: ;
-    border: 2px solid #fb565a;
+    height: 2px;
+    margin: 11px 0px 0px -37px;
+	background-color: #fb565a;
 }
 
 .about-left-list b {
