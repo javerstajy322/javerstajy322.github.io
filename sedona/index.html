@@ -80,19 +80,85 @@
 			</section>
 			<section class="content-section content-section-4">
 				<div class="content-section-offers">
-					<h3>Сувениры</h3>
-					<p>Не только китайского, но и местного производства!</p>
+					<h2>
+						Небольшая
+						<br> площадь
+					</h2>
+					<b>№3</b>
+					<p>Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="content-section-offers">
-					<h3>Сувениры</h3>
-					<p>Не только китайского, но и местного производства!</p>
+					<h2>
+						Красивая 
+						<br> дорога
+					</h2>
+					<b>№4</b>
+					<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 				</div>
 				<div class="content-section-offers">
-					<h3>Сувениры</h3>
-					<p>Не только китайского, но и местного производства!</p>
+					<h2>
+						Мало 
+						<br> туристов
+					</h2>
+					<b>№5</b>
+					<p>Большинство едет в гранд каньон и толпится там</p>
 				</div>
 			</section>
+			<div class="offer-choice">
+				<h2>Заинтересовались?</h2>
+				<p>
+					Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+				</p>
+				<h2 class="visually-hidden">Поиск гостиницы в седоне.</h2>
+				<button class="button form-button">Поиск гостиницы в седоне</button>
+				<section class="modal modal-choice">
+					<form class="form-choice" action="">
+						<p class="date-come">
+							<label for="">Дата заезда:</label>
+							<input type="text">
+						</p>
+						<p class="date-out">
+							<label for="">Дата выезда:</label>
+							<input type="text">
+						</p>
+						<div class="quantity-incriment">
+							<p class="adult-incriment">
+								<label for="">Взрослые:</label>
+								<input type="text">
+							</p>
+							<p class="child-incriment">
+								<label for="">Дети:</label>
+								<input type="text">
+							</p>
+						</div>
+						<input type="submit" value="Найти">
+					</form>
+				</section>
+			</div>
+			<div class="map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6f2cd9c56c6b1fdde79ed613f942f900eac8cdd79d0c96bf1089381c92b6830e&amp;source=constructor" width="100%" height="473" frameborder="0"></iframe>
+			</div>
 		</div>
 	</main>
+
+	<script>
+		var popupButton = document.querySelector(".form-button");
+		var popup = document.querySelector(".modal-choice");
+		var toggled = false;
+
+		popupButton.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            if(!toggled) {
+            	toggled = true;
+            	popup.classList.add("modal-close");
+            	return;
+            }
+            if(toggled) {
+            	toggled = false;
+            	popup.classList.remove("modal-close");
+            	return;
+            }
+        });
+	</script>
 </body>
 </html>

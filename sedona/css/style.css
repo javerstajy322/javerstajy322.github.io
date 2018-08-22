@@ -216,3 +216,160 @@ input[type="radio"].visually-hidden {
   align-items: center;
   flex:1;
 }
+
+.content-section-4 {
+  min-height: 256px;
+  background-color: #eeeeee;
+}
+
+.content-section-4 .content-section-offers {
+  justify-content: flex-start;
+}
+
+.content-section-4 h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 12%;
+
+  text-align: center;
+  font-family: PTsans-bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.content-section-4 b,
+.content-section-4 p {
+  margin: 0;
+  padding: 0;
+  padding: 0 8.5%; 
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+} 
+
+.content-section-4 b {
+   margin: 25px 0;
+} 
+
+.offer-choice {
+  position: relative;
+  min-height: 291px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-button {
+  padding: 0;
+  margin: 0;
+
+  display: inline-block;
+
+  position: absolute;
+  bottom: 0;
+
+  box-sizing: border-box;
+  min-height: 86px;
+  min-width: 568px;
+
+  background-color: #766357;
+  color: #fff;
+  border: none;
+
+  font-family: PTsans-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.modal {
+  z-index: 2;
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-choice {
+  position: absolute;
+  min-width: 458px;
+  top: 291px;
+
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 55px;
+  background-color: #fff;
+}
+
+.form-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-choice p {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-choice .date-come,
+.form-choice .date-out {
+  margin-bottom: 30px;
+}
+
+.form-choice input {
+  box-sizing: border-box;
+  padding: 9px 12px;
+  padding-right: 36px;
+  width: 346px;
+  font-family: inherit;
+}
+
+.form-choice label {
+  font-family: PTsans-bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.quantity-incriment {
+  margin-bottom: 54px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+.quantity-incriment input {
+  width: 114px;
+}
+
+.form-choice input[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 0;
+  font-family: PTsans-bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 100;
+  color: #fff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  border: none;
+}
+
+.adult-incriment {
+  min-width: 226px;
+}
+
+.child-incriment {
+  min-width: 179px;
+}
+
