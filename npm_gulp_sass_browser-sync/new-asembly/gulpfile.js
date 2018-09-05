@@ -4,6 +4,7 @@ var minifyCss   = require('gulp-minify-css');
 var sass        = require('gulp-sass');
 var notify      = require('gulp-notify');
 var browserSync = require('browser-sync');
+var rename      = require('gulp-rename');
 var reload      = browserSync.reload;
 // var connectPHP = require('gulp-connect-php');
 
@@ -20,7 +21,9 @@ var paths = {
 gulp.task('mincss', function(){
   return gulp.src(paths.css)
     .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('app/css'))
     .pipe(minifyCss())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
     .pipe(reload({stream:true}));
 });
