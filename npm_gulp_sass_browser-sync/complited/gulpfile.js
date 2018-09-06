@@ -14,7 +14,7 @@ var reload      = browserSync.reload;
 // ///////////////////////////////////////////////
 var paths = {
   html:['app/*.html'],
-  css:['app/scss/*.scss'],
+  css:['app/sass/*.sass'],
   // script:['./*.coffee']
 };
 
