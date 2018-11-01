@@ -1,0 +1,270 @@
+/*fonts*/
+// @font-face
+// 	font-family: 'ProximaNovaBoldIt'
+// 	src: url('../fonts/ProximaNova-BoldIt.ttf')
+
+
+
+/*main*/
+//#393939
+$def-color-gray: #393939
+$text-color-white: #d0d0d0
+$inner-color: #efefef
+$heading-color: #5c5c5c
+$category-color: #75cec2
+$footer-dark: #393939
+$footer-dark-dark: #363636
+$footer-def-text: #d2d2d2
+.container
+    width: 950px
+    margin: 0 auto
+    padding: 0 50px
+    background-color: #fff
+
+.cnt-footer
+    background-color: $footer-dark
+.cnt-bottom-footer
+    background-color: $footer-dark-dark
+
+
+body
+    background-color: $inner-color
+    font-size: 13px
+    color: $heading-color
+/*header*/
+
+.header-wrapper
+    padding-bottom: 40px
+
+.logo
+    margin: 50px 0 0 0
+    padding: 35px 0
+
+.main-nav
+    display: flex
+    justify-content: space-between
+    background-color: $def-color-gray
+    .site-nav
+        justify-content: space-around
+        min-width: 720px
+        a
+            padding: 21px 0
+            width: 100%
+            text-align: center
+            color: $text-color-white
+            text-decoration: none
+            border-right: solid 1px #464646
+            text-transform: uppercase
+            font-weight: 700
+    .social-nav
+        justify-content: center
+        min-width: 88px
+        a
+            margin: 21px 7px
+            text-align: center
+            color: $text-color-white
+            text-decoration: none
+    ul
+        display: flex
+        list-style: none
+        margin: 0
+        padding: 0
+
+/*slider*/        
+.slider
+    position: relative
+    margin-bottom: 50px
+    .slider-list
+        position: relative
+        text-align: center
+        list-style: none
+        margin: 0
+        padding: 0
+        padding-bottom: 20px
+        .slider-item
+            h1, h2, h3
+                margin: 0
+                padding: 0
+                font-size: 35px
+                color: $heading-color
+                margin-bottom: 30px
+            p
+                margin: 0
+                padding: 0
+                font-size: 25px
+                color: $heading-color
+                margin-bottom: 50px
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../img/slider-button-prev.png')
+            height: 35px
+            width: 35px
+            top: 50%
+            left: 0
+        &::after
+            content: ''
+            position: absolute
+            background-image: url('../img/slider-button-next.png')
+            height: 35px
+            width: 35px
+            top: 50%
+            right: 0
+    &::after
+        content: ''
+        position: absolute
+        background-image: url('../img/slider-navs.png')
+        background-repeat: no-repeat
+        height: 11px
+        width: 59px
+        bottom: 0
+        left: 445px
+
+/*specification*/
+.specification
+    position: relative
+    margin: 0 auto
+    padding-bottom: 50px
+    text-align: center
+    max-width: 800px
+    &::after
+        content: ''
+        position: absolute
+        left: -75px
+        bottom: 0
+        height: 1px
+        width: 950px
+        background-color: #e3e3e3;
+    h1, h2, h3, h4
+        margin: 0
+        margin-bottom: 20px
+        padding: 0
+        font-size: 25px
+    p
+        font-size: 14px
+        margin-bottom: 40px
+    ul, ul li
+        margin: 0
+        padding: 0
+        list-style: none
+    .specification-list
+        max-width: 780px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        .specification-item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            img
+                vertical-align: top
+            b
+                margin-top: 10px
+                font-size: 16px
+/*portfolio*/
+
+.portfolio
+    margin-top: 50px
+    padding-bottom: 50px
+    h2
+        margin-bottom: 20px
+        text-transform: uppercase
+        font-weight: 700
+    ul, li
+        margin: 0
+        padding: 0
+        list-style: none
+    .portfolio-list
+        display: flex
+        justify-content: space-between
+        .portfolio-item
+            max-width: 302px
+            h3
+                margin: 0
+                padding: 0
+                font-size: 16px
+                margin-top: 10px
+                margin-bottom: 10px
+            p
+                margin: 0
+                padding: 0
+                color: $heading-color
+                font-size: 14px
+                line-height: 26px
+            .category
+                margin-bottom: 20px
+                line-height: 16px
+                font-size: 13px
+                color: $category-color
+
+/*footer*/
+.main-footer
+    color: $footer-def-text
+    margin-bottom: 50px
+.top-footer
+    padding-top: 60px
+    padding-bottom: 60px
+    line-height: 24px
+    ul, li
+        margin: 0
+        padding: 0
+        list-style: none
+    .footer-list
+        display: flex
+        justify-content: space-between
+        .footer-item
+            min-width: 302px 
+            font-size: 14px
+            h1, h2, h3
+                text-transform: uppercase
+                font-size: 16px
+            p
+                padding: 0
+                margin: 0
+                margin-bottom: 30px
+                max-width: 270px
+            .contact-list li
+                padding-left: 20px
+.contact-list
+    li
+        position: relative
+    .geolocal    
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../img/geolocal.png')
+            background-repeat: no-repeat
+            left: 0
+            top: 5px
+            width: 9px
+            height: 13px  
+    .tel
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../img/phone.png')
+            background-repeat: no-repeat
+            left: 0
+            bottom: 30%
+            width: 10px
+            height: 11px  
+    .mail
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../img/mail.png')
+            background-repeat: no-repeat
+            left: 0
+            bottom: 30%
+            width: 12px
+            height: 8px  
+.bottom-footer
+    min-height: 80px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    p
+        margin: 0
+        padding: 0
