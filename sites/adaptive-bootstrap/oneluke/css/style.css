@@ -370,10 +370,14 @@ ul, li {
     .timer .timer-item .timer-item-text {
       margin: 0;
       font-size: 8px; }
-  .footer-item {
+  .news-item {
+    text-align: center; }
+  footer {
     text-align: center; }
   .subscribe-title {
     margin-top: 30px; }
+    .subscribe-title p {
+      padding: 10px; }
   .about {
     padding-top: 70px; }
     .about .slider-wrapper {
