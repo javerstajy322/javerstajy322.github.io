@@ -1,0 +1,7 @@
+.bx-pager-item {
+    display: none;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    text-indent: -9999px
+}

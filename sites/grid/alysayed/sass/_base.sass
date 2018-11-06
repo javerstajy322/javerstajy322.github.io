@@ -1,0 +1,39 @@
+@import "vars"
+    
+*
+    box-sizing: border-box
+    &:before, &:after
+        box-sizing: border-box
+
+html, body
+    height: 100%
+
+body
+    // max-width: 1366px
+    margin: 0 auto
+    font-family: 'roboto'
+    line-height: $def-lh
+    font-size: $blogP-size
+    h1,h2,h3
+        font-family: 'roboto'
+        font-weight: normal
+        font-size: $headerH-size
+        line-height: 1.2
+.container
+    max-width: 1366px
+    margin: 0 auto
+
+.light-text 
+    font-weight: 300
+.bold-text
+    font-weight: bold
+.img-responsive
+    display: block
+    max-width: 100%
+    height: auto
+
+.text-center
+    text-align: center
+
+.grid
+    display: grid

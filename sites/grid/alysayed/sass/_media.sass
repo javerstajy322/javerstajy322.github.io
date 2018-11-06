@@ -1,0 +1,116 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1224px)
+	.main-header 
+		.container.grid
+			grid-template-columns: 1fr 1fr
+
+	.about .container.grid
+		grid-template-columns: 1fr
+	.about .copyright	
+		background-position: center bottom
+		background-size: cover
+		.copyright-item
+			text-align: center
+			.author
+				margin-top: 40px
+	.about .contact
+		padding-left: 0
+		padding-right: 0
+		background-position: center
+		.contact-item
+			padding: 0 20px
+			margin: 0 auto
+			text-align: center
+			form
+				margin-top: 40px
+				margin-bottom: 40px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.main-header 
+		.container.grid
+			grid-template-columns: 1fr
+			.main-img
+				background-size: cover
+				min-height: 561px
+		.preview
+			margin: 0
+			h1
+				padding-top: 20px
+				padding-bottom: 20px
+				text-align: center
+				max-width: 100%
+				margin: 0 auto
+			p
+				margin: 50px auto
+				max-width: 800px
+
+	.blog .container.grid
+		grid-template-columns: 1fr
+	.blog .container .works
+		padding-top: 70px
+		padding-bottom: 70px
+	.blog .container .history
+		padding-top: 100px
+		padding-bottom: 100px
+	.blog .container .verified
+		padding-top: 100px
+		padding-bottom: 100px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.about .copyright	
+		background-position: center bottom
+		background-size: cover
+		.copyright-item
+			h1
+				margin: 0 auto
+				max-width: 400px
+	.about .contact form
+		input
+			min-width: 100px
+			margin-top: 10px
+			width: 100%
+		textarea
+			min-width: 100px
+			width: 100%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
