@@ -41,13 +41,31 @@ html, body {
 .range {
   position: relative;
   display: block;
-  width: 90%;
-  height: 100px;
-  top: 0;
-  left: 0;
+  width: 70%;
+  height: 15px;
+  top: 20%;
+  left: 10%;
   margin-top: -230px;
   margin-left: 5%;
-  z-index: 100; }
+  z-index: 5;
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(left, #d1eaff 0%, #d1eaff 90%, #d1eaff 50%, #435063 100%);
+  outline: none; }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-image: url("../img/input-range.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: -10px;
+    margin-left: 10px; }
 
 html {
   position: relative;
