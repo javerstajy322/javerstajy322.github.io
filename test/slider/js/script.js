@@ -1,3 +1,11 @@
+
+// var inputRange = document.querySelector('input[type="range"');
+// inputRange.addEventListener('change', function(e){
+//     e.preventDefault();
+//     var slide = event.target.value;
+
+// })
+
 var swiperH = new Swiper('.swiper-container-h', {
     spaceBetween: -1,
     watchSlidesProgress: true,
@@ -20,7 +28,7 @@ var swiperV = new Swiper('.swiper-container-v', {
     watchOverflow: true,
     nested: true,
     followFinger: false,
-    initialSlide: 1,
+    initialSlide: 0,
     pagination: {
         el: '.swiper-pagination-v',
         clickable: true,

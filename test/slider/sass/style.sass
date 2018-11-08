@@ -2,6 +2,35 @@
 @import "libs"
 @import "vars"
 @import "base"
+
+
+// Pagination-customise.
+.swiper-container-vertical > .swiper-pagination-bullets
+    right: 30px
+
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 13px 0
+
+.swiper-pagination-v .swiper-pagination-bullet
+    width: 20px
+    height: 20px
+    background-color: #fff
+    opacity: 1
+
+.swiper-pagination-v .swiper-pagination-bullet-active
+    background-color: #f78b20
+
+.range
+    position: relative
+    display: block
+    width: 90%
+    height: 100px
+    top: 0
+    left: 0
+    margin-top: -230px
+    margin-left: 5%
+   
+    z-index: 100
 // Пользовательские стили
 html 
 	position: relative
@@ -188,30 +217,157 @@ body
         margin-bottom: 100px
         margin-left: -100px
 
-.ice-1
-    position: absolute
-    left: 70px
-    top: 150px
+.slide-2
+    .ice-1
+        position: absolute
+        left: 70px
+        top: 150px
+    .ice-2
+        position: absolute
+        left: 220px
+        top: 440px
+    .ice-3
+        position: absolute
+        left: 160%
+        top: 30px
+    .ice-4
+        position: absolute
+        left: 125%
+        top: 76%
 
-.ice-2
-    position: absolute
-    left: 220px
-    top: 440px
-.ice-3
-    position: absolute
-    left: 160%
-    top: 30px
-.ice-4
-    position: absolute
-    left: 125%
-    top: 76%
-.slide-3 
-	background-image: url(../img/bg-3.png)
+.slide-3-1
+    h1
+        position: relative
+        color: #fff
+        font-family: 'GothamProLight'
+        font-weight: 300
+        left: 50%
+        top: 50%
+        text-align: center
+        width: 650px
+        margin-top: -240px
+        margin-left: -200px 
+    img
+        display: block
+        background-size: cover
+    .background
+        width: 600px
+        position: relative
+        top: 50%
+        left: 50%
+        margin-left: -50px
+        margin-top: 60px
+    .ice-1
+        position: absolute
+        top: 50%
+        right: 0
+        margin-right: -400px
+        margin-top: -300px
+        opacity: .5
+    .ice-2
+        position: absolute
+        top: 50%
+        right: 0
+        margin-right: -220px
+        margin-top: -120px
+        opacity: .5
+    .ice-3
+        position: absolute
+        bottom: 0
+        left: 0
+        margin-left: 20px
+        margin-bottom: 10px
+        opacity: .5
 
-.slide-3-1 
+.slide-3-2
+    h1
+        position: relative
+        color: #fff
+        font-family: 'GothamProLight'
+        font-weight: 300
+        left: 50%
+        top: 50%
+        text-align: center
+        width: 650px
+        margin-top: -300px
+        margin-left: -400px 
+    img
+        display: block
+        background-size: cover
+    .background
+        position: relative
+        left: 50%
+        top: 50%
+        margin-left: -155px
+        margin-top: 50px
+    .ice-1
+        position: absolute
+        top: 50%
+        right: 0
+        margin-right: 100px
+        margin-top: -270px
+        opacity: .5
+    .ice-2
+        position: absolute
+        top: 50%
+        right: 0
+        margin-top: -150px
+        margin-right: 450px
+        opacity: .5
+    .ice-3
+        position: absolute
+        top: 100%
+        right: 0
+        margin-top: -180px
+        margin-right: -500px
+.slide-3-3
+    h1
+        position: relative
+        color: #fff
+        font-family: GothamPro
+        font-weight: 300
+        left: 50%
+        top: 50%
+        text-align: center
+        width: 650px
+        margin-top: -300px
+        margin-left: -400px 
+    img
+        display: block
+        background-size: cover
+    .background
+        position: relative
+        width: 140%
+        left: 50%
+        top: 50%
+        margin-left: -270px
+        margin-top: 60px
+    .ice-1
+        position: absolute
+        top: 50%
+        left: 0
+        margin-left: -10px
+        margin-top: -270px
+    .ice-2
+        position: absolute
+        top: 50%
+        right: 0
+        margin-right: -400px
+        margin-top: -140px
+    .ice-3
+        position: absolute
+        bottom: 0
+        left: 0
+        margin-left: 100px
+        margin-bottom: -20px
+
+.slide-3-1
 	background-image: url(../img/bg-3.png)
 
 .slide-3-2 
+	background-image: url(../img/bg-3.png)
+
+.slide-3-3 
 	background-image: url(../img/bg-3.png)
 
 @import "media" // Всегда в конце
