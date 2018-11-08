@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+
 </head>
+
 <body>
-	<header class="main-header">
-		<ul class="portfolio-list container">
-			<div class="portfolio-list-wrapper">
-				<li class="portfolio-item">
-					<h2>Nerds</h2>
-					<a href="sites/fix/nerds/flex/index.html">
-						<img src="img/Nerds.jpg" alt="">
-					</a>
-				</li>
-				<li class="portfolio-item">
-					<h2>Sedona</h2>
-					<a href="sites/fix/sedona/index.html">
-						<img src="img/Sedona.jpg" alt="">
-					</a>
-				</li>
-				<li class="portfolio-item">
-					<h2>none</h2>
-					<a>
-						<img src="img/none.jpg" alt="">
-					</a>
-				</li>
-			</div>
-		</ul>
-	</header>
+  <div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-1">
+              <h1 data-swiper-parallax="-300">
+                Всегда ли цели терапии СД2<br>на поверхности?
+              </h1>
+              <a class="button button1" data-swiper-parallax="-300" href="#">
+                <span>Цель по HbA1c</span>
+              </a>
+              <a class="button button2" data-swiper-parallax="-300" href="#">
+                <span>Глипогликемия</span>
+              </a>
+              <a class="button button3" data-swiper-parallax="-300" href="#">
+                <span>Осложнения СД</span>
+              </a>
+              <a class="button button4" data-swiper-parallax="-300" href="#">
+                <span>СС риски</span>
+              </a>
+            </div>
+            <div class="swiper-slide slide slide-2">
+              <div data-swiper-parallax="-300">
+                <h1>Основа терапии —
+                  <br> патогенез СД2</h1>
+                <img class="ice-1" data-swiper-parallax="-100" src="img/slide-2/ice-1.png" alt="">
+                <img class="ice-2" data-swiper-parallax="-100" src="img/slide-2/ice-2.png" alt="">
+                <img class="ice-3" data-swiper-parallax="-100" src="img/slide-2/ice-3.png" alt="">
+                <img class="ice-4" data-swiper-parallax="-100" src="img/slide-2/ice-4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-container swiper-container-h">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide slide-3-1">
+                    <div data-swiper-parallax="-300">
+                      <h1>Звенья патогенеза СД2</h1>
+                      <img data-swiper-parallax="-300" class="background" src="img/slide-3-1/bg.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-1" src="img/slide-3-1/ice-1.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-2" src="img/slide-3-1/ice-2.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-3" src="img/slide-3-1/ice-3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide slide-3-2">
+                    <div data-swiper-parallax="-300">
+                      <h1>Смертельный октет</h1>
+                      <img data-swiper-parallax="-500" class="background" src="img/slide-3-2/bg.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-1" src="img/slide-3-2/ice-1.png" alt="">
+                      <img data-swiper-parallax="-100" class="ice-2" src="img/slide-3-2/ice-2.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-3" src="img/slide-3-2/ice-3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide slide slide-3-3">
+                    <div data-swiper-parallax="-300">
+                      <h1>Звенья патогенеза СД2</h1>
+                      <img data-swiper-parallax="-500" class="background" src="img/slide-3-3/bg.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-1" src="img/slide-3-3/ice-1.png" alt="">
+                      <img data-swiper-parallax="-100" class="ice-2" src="img/slide-3-3/ice-2.png" alt="">
+                      <img data-swiper-parallax="-300" class="ice-3" src="img/slide-3-3/ice-3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-h"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-v"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <script src="libs/swiper/swiper.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
