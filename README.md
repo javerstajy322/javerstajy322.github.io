@@ -1,5 +1,3 @@
-# javerstajy322.github.io
-
 ## ./Bootstrap
 
 * Altair: [link](./bootstrap/altair/) [Нет адаптива.]
