@@ -1,6 +1,6 @@
 ## ./Bootstrap
 
-* Altair: [link](..Layout-pages/bootstrap/altair/) [Нет адаптива.]
+* Altair: [link](./Layout-pages/bootstrap/altair/) [Нет адаптива.]
 * Boots: [link](./Layout-pages/bootstrap/boots/) [Только разметка.]  
 * Moose: [link](./Layout-pages/bootstrap/moose/) [Есть адаптив. Но можно сделать покрасивее.]
 * One luke: [link](./Layout-pages/bootstrap/oneluke/) [Единственный адекватный макет.]
